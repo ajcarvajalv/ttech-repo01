@@ -12,6 +12,14 @@
         <p>ajcarvajalv@gmail.com</p>
     </header>
 
+    <nav>
+        <a href="#experiencia"><b>Experiencia Profesional</b></a> |
+        <a href="#formacion"><b>Formación Académica</b></a> |
+        <a href="#idiomas"><b>Idiomas</b></a> |
+        <a href="#tecnologias"><b>Tecnologías</b></a> |
+        <a href="#contacto"><b>Formulario de contacto</b></a>
+    </nav>
+
     <section id="experiencia">
         <h2>Experiencia Profesional</h2>
         <ul>
@@ -31,6 +39,99 @@
                 <li><a href="https://www.uniquindio.edu.co" target="_blank"><b>Universidad del Quindío</b></a>. Comunicador social - Periodista (2017)</li>
                 <li><b>Colegio Técnico María Elvinia</b>. Bachiller técnico en la modalidad informática con énfasis en Contabilidad y Programación (2007)</li>
             </ul>
+    </section>
+
+    <section id="idiomas">
+        <h2>Idiomas</h2>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Idioma</th>
+                <th>Nivel MCER</th>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td>B2</td>
+            </tr>
+            <tr>
+                <td>Español</td>
+                <td>C2</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="tecnologias">
+        <h2>Tecnologías</h2>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Tecnología</th>
+                <th>Nivel</th>
+                <th>Año/mes</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Medio</td>
+                <td>2007</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Medio</td>
+                <td>2008</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Básico</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>GIT</td>
+                <td>Básico</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Básico</td>
+                <td>2021</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctame</h2>
+        <form method="POST">
+            <fieldset>
+                <legend>Ingrese sus datos</legend>
+                <table border="0">
+                    <tr>
+                        <td><label>Nombre (*)</label></td>
+                        <td><input type="text" id="name" name="user_name" placeholder="Nombre" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Asunto (*)</label></td>
+                        <td><input type="text" id="user_msj_subject" name="msj_subject" placeholder="Asunto" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email (*)</label></td>
+                        <td><input type="email" name="user_email" placeholder="Correo electrónico" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Teléfono</label></td>
+                        <td><input type="tel" id="phone" name="user_phone" placeholder="Teléfono"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Mensaje (*)</label></td>
+                        <td><textarea id="msj" name="user_message" rows="4" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><br><input type="submit" value="Enviar"></td>
+                        <td><br><input type="reset" value="Reset"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><br>(*) Campos requeridos</td>
+                    </tr>
+                </table>
+        </fieldset>
+        </form>
+
     </section>
     
 </body>
