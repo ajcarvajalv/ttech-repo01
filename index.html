@@ -4,97 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Qui&eacute;n soy? | Alvaro Jose Carvajal Vidarte</title>
-    <style>
-
-        h2 {
-            text-align: center;
-            border-bottom: 1px solid #333;
-        }
-
-        
-        body {
-            background-color:  #cfdade ;
-            font-family: "Roboto", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
-            font-variation-settings:
-                "wdth" 100;
-            }
-
-        header {
-            background-color: #a9bbc1;
-            color: #ffffff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .foto {
-            position: relative;
-            float: right;
-            width: 8%;
-            border-radius: 5px;
-        }
-        
-        nav {
-            padding: 10;
-            position: sticky;
-            top: 0px;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            background-color: #8d999d;
-        }
-
-        nav ul li {
-            display: inline-block;
-            position: relative;
-        }
-
-        nav ul li a {
-            display: block;
-            padding: 12px 20px;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        section {
-            background-color: #f6fdff;
-            border: 0.5px solid #c5c5c5;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 3px 10px 5px 10px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: center;
-            background-color: #ffffff;
-        }
-
-        td, th {
-            border: 1px solid #c5c5c5;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even){
-            background-color: #eeeeee;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="functions.js" defer></script>
 </head>
 <body>
     <header id="home">
@@ -150,7 +64,7 @@
             </tr>
             <tr>
                 <td>Español</td>
-                <td>C2</td>
+                <td>C2 - Nativo</td>
             </tr>
         </table>
     </section>
@@ -193,7 +107,7 @@
 
     <section id="contacto">
         <h2>Contáctame</h2>
-        <form method="get">
+        <form id="contact_form">
             <fieldset>
                 <legend>Ingrese sus datos</legend>
                 <table border="0">
@@ -218,8 +132,8 @@
                         <td><textarea id="msj" name="user_message" rows="4" required></textarea></td>
                     </tr>
                     <tr>
-                        <td><br><input type="submit" value="Enviar"></td>
-                        <td><br><input type="reset" value="Reset"></td>
+                        <td colspan="2" class="tdbutton"><input type="submit" class="fbutton" value="Enviar">
+                        <input class="fbutton" type="reset" value="Reset"></td>
                     </tr>
                     <tr>
                         <td colspan="2"><br>(*) Campos requeridos</td>
